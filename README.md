@@ -64,6 +64,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 ### Deployment
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
 Master has been deployed to Production https://enchanting-klepon-7b057f.netlify.app/
 
 ### `npm run build` fails to minify
