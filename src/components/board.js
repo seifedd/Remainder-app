@@ -70,7 +70,7 @@ function Upcoming(person, toMonth = 7) {
   let filter = person.filter((data) => {
     let Day = new Date(data.birthday).getDay();
     let Month = new Date(data.birthday).getMonth();
-    if (Day === TodayDay) return;
+    if (Day === TodayDay) return null;
     return TodayMonth <= Month && Month <= TodayMonth + toMonth;
   });
 
