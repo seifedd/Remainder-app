@@ -17,7 +17,7 @@ function iterate(data, flag) {
         <div className="flex" style={bgColor}>
           <img src={person.img} alt="img" />
           <div className="title">
-            <h3 className="name">{person.name}</h3>
+            <h3 className="name">Age {person.name}</h3>
             <h5 className="age">{Old(text.match(regexpLastWord)[0])}</h5>
           </div>
         </div>
