@@ -63,11 +63,14 @@ function Today(person) {
   return filter;
 }
 
-function Upcoming(person, toMonth = 3) {
+function Upcoming(person, toMonth = 7) {
+  let TodayDay = new Date().getDay();
   let TodayMonth = new Date().getMonth();
 
   let filter = person.filter((data) => {
+    let Day = new Date(data.birthday).getDay();
     let Month = new Date(data.birthday).getMonth();
+    if (Day === TodayDay) return;
     return TodayMonth <= Month && Month <= TodayMonth + toMonth;
   });
 
